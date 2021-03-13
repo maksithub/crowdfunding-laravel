@@ -17,6 +17,19 @@ class Project extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
+
+    public function activity() {
+        return $this->hasMany(Activity::class);
+    }
+
     public function getPercentAttribute() {
         $current = $this->money->current;
         $target = $this->money->target;
