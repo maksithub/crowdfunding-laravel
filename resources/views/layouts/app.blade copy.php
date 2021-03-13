@@ -20,20 +20,17 @@
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
+            <!-- Page Heading -->
+            <header class="bg-white shadow">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    {{ $header }}
+                </div>
+            </header>
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
-
-            <footer class="flex justify-between py-8 px-6 bg-white items-center text-xs">
-            <div>© SAIKEN</div>
-            <div class="flex items-center text-gray-400">
-                <a href="#" class="mr-4">利用規約</a>
-                <a href="#" class="mr-4">プライバシーポリシー</a>
-                <a href="#" class="mr-4">運営会社</a>
-                <a href="#">リクルート</a>
-            </div>
-            </footer>
         </div>
     </body>
 </html>
