@@ -5,11 +5,11 @@
 
             <div class="flex">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                <div>
+                    <a href="{{ route('home') }}" class="flex-shrink-0 flex items-center block">
                         <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                        <h2 class="font-bold text-2xl mx-3">SAIKEN</h2>
                     </a>
-                    <h2 class="font-bold text-2xl mx-3">SAIKEN</h2>
                 </div>
 
             </div>
