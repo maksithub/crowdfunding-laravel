@@ -12,4 +12,8 @@ class Participant extends Model
     public function rewards() {
         return $this->hasMany(Reward::class);
     }
+
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
 }

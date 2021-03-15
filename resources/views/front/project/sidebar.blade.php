@@ -5,7 +5,7 @@
     <x-slot name="progress">{{$project->percent}}</x-slot>
   </x-progress-bar>
   <div class="flex text-sm text-gray-500 justify-between mb-5">
-    <div>{{date('y 年 m 月 d', strtotime($project->created_at->addDays($project->duration)))}} まで</div>
+    <div>{{date('y 年 m 月 d 日', strtotime($project->created_at->addDays($project->duration)))}} まで</div>
     <div>目標 <span>{{number_format($project->money->target)}}</span> 円</div>
   </div>
 

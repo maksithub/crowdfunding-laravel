@@ -12,4 +12,8 @@ class Comment extends Model
     public function project() {
         return $this->belongsTo(Project::class);
     }
+
+    public function participant() {
+        return $this->belongsTo(Participant::class);
+    }
 }

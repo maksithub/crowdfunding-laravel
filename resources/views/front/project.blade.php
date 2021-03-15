@@ -1,5 +1,5 @@
 <x-app-layout>
-  <div class="max-w-7xl mx-auto px-4 lg:px-8">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8 pb-6">
       <div class="text-center pt-16">
         <h1 class="text-3xl font-bold">{{$project->title}}</h1>
         <div class="flex justify-center items-center text-xs text-gray-600 mt-5">
@@ -18,7 +18,7 @@
       <div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
         <div class="lg:col-start-1 lg:col-span-2">
 
-          @include('front.project.project-nav')
+          @include('front.project.project-nav', ['active'=>'home'])
 
           <!-- Description list-->
           <section class="bg-white p-4">

@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/project/{id}/comments', 'ProjectController@comments')->name('project.comments');
+Route::get('/project/{id}/activities', 'ProjectController@activities')->name('project.activities');
 Route::resource('project', 'ProjectController');
 
 Route::get('/dashboard', function () {

@@ -84,4 +84,16 @@ class ProjectController extends Controller
     {
         //
     }
+
+    public function comments($id) {
+        $project = Project::find($id);
+
+        return view('front.comments', ['project'=>$project]);
+    }
+
+    public function activities($id) {
+        $project = Project::find($id);
+
+        return view('front.activities', ['project'=>$project]);
+    }
 }

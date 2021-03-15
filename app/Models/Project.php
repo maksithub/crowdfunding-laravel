@@ -26,7 +26,7 @@ class Project extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function activity() {
+    public function activities() {
         return $this->hasMany(Activity::class);
     }
 
